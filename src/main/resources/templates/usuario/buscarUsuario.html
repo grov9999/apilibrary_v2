@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar usuario</title>
+</head>
+<body>
+    <h1>Usuario</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td th:text="${usuario.id}">Nro</td>
+                <td th:text="${usuario.nombre}">Nombre</td>
+                <td th:text="${usuario.correo}">Correo</td>
+                <td th:text="${usuario.contrasena}">Contraseña</td>
+                <td th:text="${usuario.rol}">Rol</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
